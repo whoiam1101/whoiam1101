@@ -21,7 +21,7 @@ Here are some ideas to get you started:
 **2013 - 2017**  PhysMath school named after A.Shahinyan
 
 **2017 - 2019** Information Technologies and Programming Faculty  
-&emsp; [ITMO](en.itmo.ru)
+&emsp; [ITMO](https://en.itmo.ru/)
 
 **Sep 2022 - Jun 2024**  Post Graduate 2-year Program (Data Science)  
 &emsp; [Yandex School of Data Analysis, Russia](https://dataschool.yandex.com/)  
