@@ -1,5 +1,7 @@
 ## Hi, I'm Samvel 👋
 
+---
+
 <!--
 **whoiam1101/whoiam1101** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -14,6 +16,14 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+### 🌱 Education
+**Sep 2022 - Jun 2024**  Post Graduate 2-year Program (Data Science)  
+&emsp; [Yandex School of Data Analysis, Russia](https://dataschool.yandex.com/)  
+&emsp; *Top Russian Data Science program with 3% acceptance rate*  
+&emsp; *GPA: 4.0/5.0*  
+
+---
 
 ### ⚡ Github Stats
 
