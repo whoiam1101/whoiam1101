@@ -4,7 +4,7 @@
 
 ### 🌟 About Me
 
-I am a **Computer Vision Engineer** passionate about solving complex problems through mathematics, machine learning, and programming. My journey began in physics and mathematics, evolved into software engineering, and has led me to specialize in computer vision and data science. Currently, I am focused on building robust machine learning solutions for real-world challenges.
+I am a techno-enthusiast who turns complex problems into elegant solutions using artificial intelligence and mathematics. My career began in theoretical sciences and applied engineering, and now I use cutting-edge technologies to create innovative solutions to real-world problems. My mission is to combine scientific research with practical achievements to change the world for the better.
 
 ---
 
