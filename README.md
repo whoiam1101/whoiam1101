@@ -8,23 +8,23 @@ I am a techno-enthusiast who turns complex problems into elegant solutions using
 
 ---
 
-### 🎓 Education
-
-- **2013–2017**: **PhysMath School named after A. Shahinyan**
-- **2017–2019**: **Faculty of Information Technologies and Programming**, [ITMO University](https://en.itmo.ru/)
-- **2022–2024**: **Post Graduate 2-Year Program in Data Science**, [Yandex School of Data Analysis](https://dataschool.yandex.com/)  
-  - *Top Russian Data Science program with a 3% acceptance rate*  
-  - **GPA:** 4.0/5.0  
-  - Key Courses: Functional Programming with Haskell, Computer Vision, Machine Learning, Reinforcement Learning, and more.
-
----
-
 ### 💼 Work Experience
 
 - **November 2024 – Present**: **Computer Vision Engineer**, Pixeria  
   - Developing and optimizing computer vision algorithms for image recognition and processing.
 - **August 2024 – October 2024**: **Computer Vision Software Engineer Intern**, Pixeria  
   - Implemented machine learning pipelines and contributed to advanced image representation models.
+
+---
+
+### 🎓 Education
+
+- **2022–2024**: **Post Graduate 2-Year Program in Data Science**, [Yandex School of Data Analysis](https://dataschool.yandex.com/)  
+  - *Top Russian Data Science program with a 3% acceptance rate*  
+  - **GPA:** 4.0/5.0  
+  - Key Courses: Functional Programming with Haskell, Computer Vision, Machine Learning, Reinforcement Learning, and more.
+- **2017–2019**: **Faculty of Information Technologies and Programming**, [ITMO University](https://en.itmo.ru/)
+- **2013–2017**: **PhysMath School named after A. Shahinyan**
 
 ---
 
