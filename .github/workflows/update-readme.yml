@@ -14,11 +14,19 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
+      - name: Backup Current README
+        run: cp README.md README_backup.md
+
       - name: Update README
         run: |
-          curl -o README.md "https://github-readme-stats.vercel.app/api?username=whoiam1101&theme=vision-friendly-dark&show_icons=true&hide_border=true&count_private=true"
-          curl -o README.md "https://github-readme-stats.vercel.app/api/top-langs/?username=whoiam1101&theme=vision-friendly-dark&show_icons=true&hide_border=true&layout=compact"
-          curl -o README.md "https://streak-stats.demolab.com?user=whoiam1101&theme=vision-friendly-dark&hide_border=true"
+          cp README.md README_temp.md
+          echo "## GitHub Stats" >> README_temp.md
+          curl -s "https://github-readme-stats.vercel.app/api?username=whoiam1101&theme=vision-friendly-dark&show_icons=true&hide_border=true&count_private=true" >> README_temp.md
+          echo "## Top Languages" >> README_temp.md
+          curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=whoiam1101&theme=vision-friendly-dark&show_icons=true&hide_border=true&layout=compact" >> README_temp.md
+          echo "## Streak Stats" >> README_temp.md
+          curl -s "https://streak-stats.demolab.com?user=whoiam1101&theme=vision-friendly-dark&hide_border=true" >> README_temp.md
+          cat README_temp.md > README.md
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add README.md
