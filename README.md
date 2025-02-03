@@ -2,12 +2,6 @@
 
 ---
 
-### 🌟 About Me
-
-I am a techno-enthusiast who turns complex problems into elegant solutions using artificial intelligence and mathematics. My career began in theoretical sciences and applied engineering, and now I use cutting-edge technologies to create innovative solutions to real-world problems. My mission is to combine scientific research with practical achievements to change the world for the better.
-
----
-
 ### 💼 Work Experience
 
 - **November 2024 – Present**: **Computer Vision Engineer**, Pixeria  
@@ -27,35 +21,6 @@ I am a techno-enthusiast who turns complex problems into elegant solutions using
 - **2013–2017**: **PhysMath School named after A. Shahinyan**
 
 ---
-
-### 🛠️ Skills
-
-#### **Programming Languages**
-- **Proficient:** Python, Go, Haskell, Rust, C++, C  
-- **Familiar:** SQL, Bash, JavaScript  
-
-#### **Machine Learning & Deep Learning**
-- **Core Expertise:** Neural Network Architecture Design, Image Processing, Object Detection, Segmentation, Reinforcement Learning, Graph Neural Networks  
-- **Specialized Knowledge:** Transfer Learning, Model Optimization (Quantization, Pruning), Data Augmentation, Statistical Modeling, Probabilistic Graphical Models  
-
-#### **Frameworks & Libraries**
-- **Deep Learning:** PyTorch, TensorFlow, PyTorch Lightning  
-- **Machine Learning Tools:** Scikit-learn, NumPy, SciPy, DGL  
-- **Computer Vision:** OpenCV, Albumentations, MMDetection  
-- **Optimization & Deployment:** ONNX, TensorRT, Docker, Kubernetes  
-
-#### **Software Development & Engineering**
-- **Version Control:** Git, GitHub, GitLab  
-- **Development Tools:** VSCode, PyCharm, Jupyter Notebook  
-- **Debugging & Profiling:** PyTorch Profiler, cProfile, Perf  
-
-#### **Mathematical & Algorithmic Skills**
-- Algorithms and Data Structures, Convex Optimization, Linear Algebra, Functional Analysis, Discrete Mathematics  
-
-#### **Cloud & DevOps**
-- Cloud Services: AWS (EC2, S3), GCP (Compute Engine)  
-- **Containerization:** Docker, Kubernetes  
-- **CI/CD:** GitHub Actions, GitLab CI  
 
 #### **Languages**
 - **Armenian:** Native  
