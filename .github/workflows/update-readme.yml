@@ -2,13 +2,7 @@ name: Update README
 
 on:
   schedule:
-    # Runs at 00:00, 04:00, 08:00, 12:00, 16:00, and 20:00 UTC every day
-    - cron: '0 0 * * *'
-    - cron: '0 4 * * *'
-    - cron: '0 8 * * *'
-    - cron: '0 12 * * *'
-    - cron: '0 16 * * *'
-    - cron: '0 20 * * *'
+    - cron: '0 */4 * * *'  # Runs every 4 hours
   push:
     branches:
       - main
@@ -16,22 +10,17 @@ on:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-    - name: Fetch GitHub stats
-      run: |
-        STATS=$(curl -s "https://github-readme-stats.vercel.app/api?username=whoiam1101&show_icons=true&count_private=true&line_height=24&hide=issues&custom_title=Contribution%20Stats")
-        LANGS=$(curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=whoiam1101&layout=compact&count_private=true&hide=Jupyter%20Notebook")
-        sed -i '/<!--START_SECTION:stats-->/,<!--END_SECTION:stats-->/c\<!--START_SECTION:stats-->\n'"$STATS"'\n<!--END_SECTION:stats-->' README.md
-        sed -i '/<!--START_SECTION:langs-->/,<!--END_SECTION:langs-->/c\<!--START_SECTION:langs-->\n'"$LANGS"'\n<!--END_SECTION:langs-->' README.md
-
-    - name: Commit and push changes
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add README.md
-        git commit -m 'Update README with latest GitHub stats'
-        git push
+      - name: Update README
+        run: |
+          curl -o README.md "https://github-readme-stats.vercel.app/api?username=whoiam1101&show_icons=true&count_private=true&line_height=24&hide=issues&custom_title=Contribution%20Stats"
+          curl -o README.md "https://github-readme-streak-stats.herokuapp.com/?user=whoiam1101"
+          curl -o README.md "https://github-readme-stats.vercel.app/api/top-langs/?username=whoiam1101&layout=compact&count_private=true&hide=Jupyter%20Notebook"
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git commit -m "Updated README"
+          git push
