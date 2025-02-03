@@ -2,8 +2,13 @@ name: Update README
 
 on:
   schedule:
-    # Runs at 00:00 UTC every day
+    # Runs at 00:00, 04:00, 08:00, 12:00, 16:00, and 20:00 UTC every day
     - cron: '0 0 * * *'
+    - cron: '0 4 * * *'
+    - cron: '0 8 * * *'
+    - cron: '0 12 * * *'
+    - cron: '0 16 * * *'
+    - cron: '0 20 * * *'
   push:
     branches:
       - main
