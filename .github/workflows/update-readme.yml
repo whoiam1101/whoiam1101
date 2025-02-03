@@ -24,3 +24,5 @@ jobs:
           git add README.md
           git commit -m "Updated README"
           git push
+        env:
+          ACTIONS_PAT: ${{ secrets.ACTIONS_PAT }}
