@@ -19,11 +19,11 @@ jobs:
 
       - name: Update README
         run: |
-          echo "![GitHub Stats](https://github-readme-stats.vercel.app/api?username=whoiam1101&theme=vision-friendly-dark&show_icons=true&hide_border=true&count_private=true)" > README.md
+          echo "![GitHub Stats](https://github-readme-stats.vercel.app/api?username=whoiam1101&show_icons=true&hide_border=true&count_private=true)" >> README.md
           echo "" >> README.md
-          echo "![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=whoiam1101&theme=vision-friendly-dark&show_icons=true&hide_border=true&layout=compact)" >> README.md
+          echo "![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=whoiam1101&show_icons=true&hide_border=true&layout=compact)" >> README.md
           echo "" >> README.md
-          echo "![Streak Stats](https://streak-stats.demolab.com?user=whoiam1101&theme=vision-friendly-dark&hide_border=true)" >> README.md
+          echo "![Streak Stats](https://streak-stats.demolab.com?user=whoiam1101&hide_border=true)" >> README.md
           echo "" >> README.md
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
