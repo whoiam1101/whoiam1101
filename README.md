@@ -14,5 +14,10 @@
 
 ### ⚡ GitHub Stats
 
+<!--START_SECTION:stats-->
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=whoiam1101&show_icons=true&count_private=true&line_height=24&hide=issues&custom_title=Contribution%20Stats)  
+<!--END_SECTION:stats-->
+
+<!--START_SECTION:langs-->
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=whoiam1101&layout=compact&count_private=true&hide=Jupyter%20Notebook)
+<!--END_SECTION:langs-->
