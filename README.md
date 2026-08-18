@@ -15,7 +15,7 @@
 
 ### 🌟 About Me
 
-I am a **Machine Learning & Data Science Engineer** based in Yerevan, Armenia. I specialize in large language models, distributed training & high-throughput multi-node inference (vLLM, SGLang, DeepSpeed), and scalable data pipelines. Outside of industry work, I am passionate about formal verification of mathematics, Homotopy Type Theory (HoTT), and Category Theory in Lean 4.
+I am a **Machine Learning & Data Science Engineer** based in Yerevan, Armenia. I specialize in large language models, distributed training & high-throughput multi-node inference (vLLM, SGLang, DeepSpeed), and scalable data pipelines. Outside of industry work, I am passionate about formal verification of mathematics, Homotopy Type Theory (HoTT), and Category Theory.
 
 ---
 
@@ -72,7 +72,7 @@ I am a **Machine Learning & Data Science Engineer** based in Yerevan, Armenia. I
 
 ### 🎯 Research & Interests
 
-- **Mathematics:** Formal verification of mathematics, Homotopy Type Theory (HoTT, Voevodsky's Univalent Foundations), Category Theory, Lean 4 / Mathlib.
+- **Mathematics:** Formal verification of mathematics, Homotopy Type Theory (HoTT, Voevodsky's Univalent Foundations), Category Theory.
 - **Hobbies:** RTS strategies and chess.
 
 ---
