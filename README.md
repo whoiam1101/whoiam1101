@@ -97,7 +97,7 @@ I am a **Machine Learning & Data Science Engineer** based in Yerevan, Armenia. I
 <br/>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/whoiam1101/whoiam1101/output/github-metrics.svg" alt="Samvel's GitHub Metrics" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=whoiam1101&theme=tokyo-night&hide_border=true" alt="Activity Graph" />
 </div>
 
 <br/>
