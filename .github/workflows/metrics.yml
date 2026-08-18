@@ -22,44 +22,34 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Ensure output directory exists
+      - name: Create dist directory
         run: mkdir -p dist
 
       - name: Generate GitHub Metrics
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN || secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           user: whoiam1101
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Yerevan
-          
-          # Save to dist/ so it gets deployed along with the snake
           output_action: none
-          filename: dist/github-metrics.svg
+          filename: github-metrics.svg
 
-          # Languages breakdown plugin
+          # Languages breakdown plugin (works reliably with standard GITHUB_TOKEN)
           plugin_languages: yes
           plugin_languages_analysis_timeout: 15
           plugin_languages_categories: markup, programming
           plugin_languages_colors: github
           plugin_languages_limit: 8
-          plugin_languages_recent_categories: markup, programming
-          plugin_languages_recent_days: 14
-          plugin_languages_recent_load: 300
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
 
-          # Habits plugin (activity charts)
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
-
-          # Lines of code plugin
-          plugin_lines: yes
-          plugin_lines_history_limit: 1
+      - name: Copy metrics to dist
+        run: |
+          if [ -f "github-metrics.svg" ]; then
+            cp github-metrics.svg dist/github-metrics.svg
+          fi
 
       - name: Generate Contribution Snake
         uses: Platane/snk@v3
@@ -69,13 +59,13 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
-          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy All Assets to Output Branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
-          keep_files: false
+          keep_files: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
