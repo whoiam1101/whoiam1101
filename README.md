@@ -1,3 +1,87 @@
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=whoiam1101&show_icons=true&hide_border=true&count_private=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=whoiam1101&show_icons=true&hide_border=true&layout=compact)
+<div align="center">
+  <h1>Hi, I'm Samvel Safaryan 👋</h1>
+  <p><strong>DS / Machine Learning Engineer | LLMs • Distributed Training & Inference • MLOps</strong></p>
 
+  <p>
+    <a href="https://www.linkedin.com/in/samvelsafaryan"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+    <a href="https://t.me/SamvelSafaryan"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" /></a>
+    <a href="mailto:samvel.safaryan13@yandex.ru"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+    <a href="https://github.com/whoiam1101"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  </p>
+</div>
+
+---
+
+### 🌟 About Me
+
+I am a **Machine Learning & Data Science Engineer** based in Yerevan, Armenia. I specialize in large language models, distributed training & high-throughput multi-node inference (vLLM, SGLang, DeepSpeed), and scalable data pipelines. Outside of industry work, I am passionate about formal verification of mathematics, Homotopy Type Theory (HoTT), and Category Theory in Lean 4.
+
+---
+
+### 💼 Work Experience
+
+#### **Wildberries** — *Yerevan, Armenia*
+- **DS / MLE Engineer** *(March 2026 – Present)*
+  - Built an end-to-end user persona generation system for an AI assistant: multi-source data ingestion and LLM-powered text persona synthesis.
+  - Designed an Airflow DAG with 20+ nodes for the persona generation pipeline with caching & low-latency retrieval via Redis.
+  - Deployed multi-node LLM inference using **vLLM** and **SGLang** with structured JSON output enforcement.
+  - Developed an AI-assistant context enrichment service using **FastAPI** and **PostgreSQL**.
+  - **Tech Stack:** PyTorch, HuggingFace, vLLM, SGLang, DeepSpeed, Unsloth, Accelerate, Instructor, PySpark, Airflow, Redis, ClickHouse, Kubernetes, SLURM.
+
+- **ML Engineer** *(February 2025 – March 2026)*
+  - Designed and built a custom **MTEB benchmark** for user embeddings (retrieval, clustering, ranking).
+  - Implemented **next-item prediction** on LLM architectures: domain token vocabulary expansion and multi-node multi-GPU training.
+  - Developed top-$N$ product ranking with **MMR diversification**, optimizing core functions via **Numba JIT** for a **~10x speedup**.
+  - Implemented behavioral user persona models.
+  - **Tech Stack:** PyTorch, HuggingFace, vLLM, SGLang, DeepSpeed, Unsloth, Accelerate, Numba, PySpark, Airflow, ClickHouse, SLURM.
+
+#### **Pixeria** — *Yerevan, Armenia*
+- **Computer Vision Engineer** *(August 2024 – February 2025)*
+  - Developed CV components for an AR interior visualization system: wall/floor/ceiling detection, ray casting, color transfer, and semantic segmentation.
+  - **Tech Stack:** Python, PyTorch, OpenCV, NumPy.
+
+---
+
+### 🛠️ Technical Skills
+
+- **Languages:** Python, SQL, Bash
+- **Deep Learning & LLM Training:** PyTorch, Hugging Face Transformers, PEFT, DeepSpeed, Accelerate, Unsloth, Numba
+- **LLM Inference & Serving:** vLLM, SGLang, Instructor, Structured Output, Multi-Node Deployment
+- **MLOps & Infrastructure:** SLURM, Kubernetes, Docker, Airflow, GitLab CI/CD
+- **Big Data & Storage:** PySpark, Polars, ClickHouse, Redis, S3 / MinIO
+
+---
+
+### 🔬 Open-Source & Projects
+
+- [**`basic-category-theory-lean4`**](https://github.com/whoiam1101/basic-category-theory-lean4) *(Lean 4, Mathlib | June 2026 – Present)*  
+  Formalizing all examples, exercises, theorems, and lemmas from Tom Leinster's *Basic Category Theory*, along with missing category-theoretic definitions in Mathlib4.
+
+---
+
+### 🎓 Education
+
+- **Yandex School of Data Analysis (YSDA / ШАД)** *(Sep 2022 – Jun 2024)*  
+  *Program:* Data Science  
+- **ITMO University (НИУ ИТМО)** *(Sep 2017 – Apr 2019)*  
+  *Program:* Information Technologies and Computer Science
+
+---
+
+### 🎯 Research & Interests
+
+- **Mathematics:** Formal verification of mathematics, Homotopy Type Theory (HoTT, Voevodsky's Univalent Foundations), Category Theory, Lean 4 / Mathlib.
+- **Hobbies:** RTS strategies and chess.
+
+---
+
+### ⚡ GitHub Stats
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=whoiam1101&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Samvel's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=whoiam1101&layout=compact&theme=tokyonight&hide_border=true&hide=Jupyter%20Notebook" alt="Top Languages" />
+</div>
+<br/>
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=whoiam1101&theme=tokyonight&hide_border=true" alt="Streak Stats" />
+</div>
