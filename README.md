@@ -91,7 +91,7 @@ I am a **Machine Learning & Data Science Engineer** based in Yerevan, Armenia. I
 ### ⚡ Activity & Stats
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=whoiam1101&theme=tokyonight&hide_border=true" alt="Streak Stats" />
+  <img src="https://streak-stats.demolab.com/?user=whoiam1101&theme=tokyonight&hide_border=true" alt="Streak Stats" />
 </div>
 
 <br/>

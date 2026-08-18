@@ -1,4 +1,4 @@
-name: Metrics
+name: Metrics & Snake
 
 on:
   # Schedule daily update at midnight UTC
@@ -15,24 +15,28 @@ permissions:
   contents: write
 
 jobs:
-  github-metrics:
+  build-and-deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Ensure output directory exists
+        run: mkdir -p dist
+
       - name: Generate GitHub Metrics
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN || secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
           user: whoiam1101
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Yerevan
           
-          # Store output SVGs in an isolated 'output' branch
-          output_action: branch
-          committer_branch: output
-          committer_message: "build: update metrics [skip ci]"
-          filename: github-metrics.svg
+          # Save to dist/ so it gets deployed along with the snake
+          output_action: none
+          filename: dist/github-metrics.svg
 
           # Languages breakdown plugin
           plugin_languages: yes
@@ -64,12 +68,14 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
 
-      - name: Deploy Snake to Output Branch
+      - name: Deploy All Assets to Output Branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
-          keep_files: true
+          keep_files: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
