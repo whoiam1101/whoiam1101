@@ -1,0 +1,75 @@
+name: Metrics
+
+on:
+  # Schedule daily update at midnight UTC
+  schedule:
+    - cron: "0 0 * * *"
+  # Allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+  # Run on push to main to initialize on setup
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Generate GitHub Metrics
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          user: whoiam1101
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Yerevan
+          
+          # Store output SVGs in an isolated 'output' branch
+          output_action: branch
+          committer_branch: output
+          committer_message: "build: update metrics [skip ci]"
+          filename: github-metrics.svg
+
+          # Languages breakdown plugin
+          plugin_languages: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_categories: markup, programming
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+          plugin_languages_recent_categories: markup, programming
+          plugin_languages_recent_days: 14
+          plugin_languages_recent_load: 300
+          plugin_languages_sections: most-used
+          plugin_languages_threshold: 0%
+
+          # Habits plugin (activity charts)
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+
+          # Lines of code plugin
+          plugin_lines: yes
+          plugin_lines_history_limit: 1
+
+      - name: Generate Contribution Snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: whoiam1101
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Deploy Snake to Output Branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_files: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

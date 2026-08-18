@@ -87,13 +87,20 @@ I am a **Machine Learning & Data Science Engineer** based in Yerevan, Armenia. I
 
 ---
 
-### ⚡ GitHub Stats
+### ⚡ Activity & Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=whoiam1101&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Samvel's GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=whoiam1101&layout=compact&theme=tokyonight&hide_border=true&hide=Jupyter%20Notebook" alt="Top Languages" />
-</div>
-<br/>
-<div align="center">
   <img src="https://streak-stats.demolab.com?user=whoiam1101&theme=tokyonight&hide_border=true" alt="Streak Stats" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/whoiam1101/whoiam1101/output/github-metrics.svg" alt="Samvel's GitHub Metrics" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/whoiam1101/whoiam1101/output/github-contribution-grid-snake-dark.svg" alt="Contribution Graph Snake" />
 </div>
