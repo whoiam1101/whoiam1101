@@ -1,6 +1,7 @@
 <div align="center">
   <h1>Hi, I'm Samvel Safaryan 👋</h1>
   <p><strong>DS / Machine Learning Engineer | LLMs • Distributed Training & Inference • MLOps</strong></p>
+  <p>📍 <strong>Yerevan, Armenia</strong> &nbsp;|&nbsp; 🌍 <strong>Open to Relocation • Remote • Hybrid</strong></p>
 
   <p>
     <a href="https://www.linkedin.com/in/samvel-safaryan-15400231a/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
@@ -82,8 +83,8 @@ I am a **Machine Learning & Data Science Engineer** based in Yerevan, Armenia. I
 - **LinkedIn:** [Samvel Safaryan](https://www.linkedin.com/in/samvel-safaryan-15400231a/)
 - **Telegram:** [@whoiam110113](https://t.me/whoiam110113)
 - **Email:** [samvelsafaryan1313@gmail.com](mailto:samvelsafaryan1313@gmail.com) / [samvel.safaryan13@yandex.ru](mailto:samvel.safaryan13@yandex.ru)
-- **Phone:** +374 33 151722
 - **GitHub:** [whoiam1101](https://github.com/whoiam1101)
+- **Location:** Yerevan, Armenia *(Open to Relocation, Remote, Hybrid)*
 
 ---
 
