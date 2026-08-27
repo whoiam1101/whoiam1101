@@ -56,7 +56,7 @@ I am a **Machine Learning & Data Science Engineer** based in Yerevan, Armenia. I
 
 ### 🔬 Open-Source & Projects
 
-- [**`basic-category-theory-lean4`**](https://github.com/whoiam1101/basic-category-theory-lean4) *(Lean 4, Mathlib | June 2026 – Present)*  
+- [**`basic-category-theory-lean4`**](https://github.com/whoiam1101/basic-category-theory-lean4) *(Lean 4, Mathlib | June 2026 – August 2026)*  
   - **Goal:** Comprehensive, machine-checked formalization of Tom Leinster's textbook *"Basic Category Theory"* (Cambridge Studies in Advanced Mathematics) with 100% rigorous kernel verification and zero `sorry` / incomplete proofs.
   - **Description:** Formalizing core category theory in Lean 4 — including categories, functors, natural transformations, adjunctions (via units/counits & initial objects), set constructions, and representables (the Yoneda Lemma and its corollaries) — contributing definitions and lemmas currently missing from Mathlib4.
 
