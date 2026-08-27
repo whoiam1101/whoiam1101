@@ -1,4 +1,4 @@
-name: Contribution Snake
+name: Generate Assets
 
 on:
   # Schedule daily update at midnight UTC
@@ -22,6 +22,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
+      - name: Create dist directory
+        run: mkdir -p dist
+
+      - name: Generate Activity Graph
+        uses: maurodesouza/github-readme-activity-graph-action@v1
+        with:
+          username: whoiam1101
+          options: theme=tokyo-night&hide_border=true&area=true
+          output_path: dist/activity-graph.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Generate Contribution Snake
         uses: Platane/snk@v3
         with:
@@ -32,7 +43,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Deploy Snake to Output Branch
+      - name: Deploy Assets to Output Branch
         uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output
